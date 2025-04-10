@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لعبة المعلم أبو خلدون</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>لعبة المعلم أبو خلدون</h1>
+  <div id="gameContainer" onclick="startCarSound()">
+    <div id="timer">الوقت: 60</div>
+    <img id="car" src="Car.jpg" />
+    <img id="rock" src="Hajar.jpg" />
+    <img id="flag" src="Alam.png" />
+  </div>
+  <div id="winScreen" class="screen">مبروك! لقد فزت</div>
+  <div id="loseScreen" class="screen">حظاً أوفر! حاول مرة أخرى</div>
+  <button id="restartBtn" onclick="location.reload()">إعادة التشغيل</button>
+
+  <audio id="carSound" src="wwee.mp3" loop></audio>
+  <audio id="winSound" src="yes.wav"></audio>
+  <audio id="loseSound" src="No.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
